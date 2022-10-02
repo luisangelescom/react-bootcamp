@@ -1,3 +1,5 @@
+import { memo } from "react";
+
 import PropTypes from "prop-types";
 
 function Connect({ isConnect }) {
@@ -12,4 +14,4 @@ Connect.propTypes = {
   isConnect: PropTypes.bool.isRequired,
 };
 
-export default Connect;
+export default memo(Connect);
